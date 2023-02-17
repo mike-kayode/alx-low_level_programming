@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 int main() {
-	printf("A true masterpiece, oe of its kind, \n");
-	printf("whose aesthestics appeal is sublime. \n");
+	printf("with proper grammar, but the outcome is a piece of art, \n");
 	
 	return 0;
 }
