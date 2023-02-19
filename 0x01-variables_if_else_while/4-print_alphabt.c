@@ -5,15 +5,19 @@
  * Return: Always 0
  */
 
-int main(void)
+int main()
 {
-	char c = 'a';
-        while (c <= 'z')
-        if (c == 'e' || c == 'h')
+	char i = 'a';
+	while (i <= 'z')
 	{
-		putchar(c);
-		c++;
+		if (i != 'q' && i != 'e')
+		{
+			putchar(i);
+		}
+		i++;
 	}
+
 	putchar('\n');
+
 	return (0);
 }
