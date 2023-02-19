@@ -7,13 +7,15 @@
 
 int main()
 {
-	char i;
-	for (i = 'a' ; i <= 'z' ; i++)
+	char c = 'a';
 	
-		putchar(i);
-	for (i = 'A' ; i <= 'Z' ; i++)
+	while (c <= 'z') 
+	{
+		putchar(c);
 
-		putchar(i);
+		c++;
+	}
+
 	putchar('\n');
-	return (0);
+	return 0;
 }
