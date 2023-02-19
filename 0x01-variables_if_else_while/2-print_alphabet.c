@@ -1,0 +1,19 @@
+#include <stdio.h>
+/**
+ * main - Entry point
+ *  
+ * Return: Always 0
+ */
+
+int main()
+{
+	char i;
+	for (i = 'a' ; i <= 'z' ; i++)
+	{
+		putchar(i);
+		i++;
+	}
+
+	putchar('\n');
+	return (0);
+}
