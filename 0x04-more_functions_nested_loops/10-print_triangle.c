@@ -2,27 +2,26 @@
 
 /**
  * print_triangle- function that print a triangle
- * size is the size of the triangle
- * return: Always 0
+ * @size: is the size of the triangle
  */
 
 void print_triangle(int size)
 {
-	int i, j, k;
+	int height;
+	int width;
+	int draw;
 
 	if (size <= 0)
-	{
 		_putchar('\n');
-		return;
-	}
-	for (i = 1; i <= size; i++)
-	{
-		for (j = 1; j <= 1; j++)
-		{
-			for (k = 1; k <= i; k++)
 
+	for (height = 1; height <= size; height++)
+	{
+		for (width = 1; width <= (size - height); width++)
+			_putchar(' ');
+
+		for (draw = 1; draw <= height; draw++)
 			_putchar('#');
-		}
+
 		_putchar('\n');
 	}
 }
