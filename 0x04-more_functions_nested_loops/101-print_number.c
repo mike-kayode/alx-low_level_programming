@@ -11,7 +11,7 @@ void print_number(int n)
 
 	if (n < 0)
 	{
-		_putchar('_');
+		_putchar('-');
 		n = -n;
 	}
 	while ((n / div) >= 10)
