@@ -2,7 +2,8 @@
 
 /**
  * puts_half - print half of a string
- * @str: pointer to a tring
+ * @str: pointer to a string
+ * return: success
  */
 
 void puts_half(char *str)
