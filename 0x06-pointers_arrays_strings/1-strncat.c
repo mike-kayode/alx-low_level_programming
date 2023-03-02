@@ -3,8 +3,8 @@
 
 /**
  * char *_strncat - function that concatenates two strings
- * @dest: 
- * @src: 
+ * @dest: string to be apended
+ * @src: string to append
  * @n: interger
  * Return: dest
  */
@@ -17,5 +17,5 @@ char *_strncat(char *dest, char *src, int n)
 	for (i = 0; i < n && src[i] != '\0'; i++)
 		dest[boy + i] = src[i];
 	dest[boy] = '\0';
-       return (dest);
-}       
+	return (dest);
+}
