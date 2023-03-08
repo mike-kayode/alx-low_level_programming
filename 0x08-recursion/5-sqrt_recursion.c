@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * _sqrt_recursion - returns the natural square root of a number
+ * find_root - find square root of n
  * @n: integer number
+ * @root: test this root
  * Return: Success
  */
 
@@ -18,7 +19,7 @@ int find_root(int n, int root)
 }
 
 /**
- * _sqrt_recursion - find natural square root of n
+ *  _sqrt_recursion - returns the natural square root of a number
  * @n: n
  * Return: natural square root, or -1 if not natural root
  */
