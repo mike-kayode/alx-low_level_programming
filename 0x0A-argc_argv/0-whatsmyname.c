@@ -2,8 +2,8 @@
 #include <string.h>
 
 /**
- * int main - Function that print name
- * @rvg[]: character invoking
+ * main - Function that print name
+ * @argv: character invoking
  * @argc: integer
  * Return: succcess
  */
