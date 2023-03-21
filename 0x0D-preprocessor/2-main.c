@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 /**
- * main - function that print file name
+ * main - Prints the file name of the program
  * Rturn: Always success
  */
 
 int main(void)
 {
-	printf("%s\n",__FILE__);
+	printf("%s\n", __FILE__);
 	return (0);
 }
