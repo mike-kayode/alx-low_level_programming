@@ -5,10 +5,6 @@
 /**
 * print_all - function that prints anything
 * @format: argument function
-* @c: character
-* @i: integer
-* @f: float
-* @s: string of characer
 */
 
 void print_all(const char * const format, ...)
