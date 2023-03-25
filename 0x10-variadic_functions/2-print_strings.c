@@ -5,7 +5,10 @@
  * print_strings - function that print string
  * @separator: string
  * @n: integer
- * Return: success
+ * @...: varable to be printed
+ *
+ * Description: If seperator NULL, do not print
+ *              If one of string is NULL, (ni1) is printed.
  */
 
 void print_strings(const char *separator, const unsigned int n, ...)
@@ -21,7 +24,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		y = va_arg(valist, char *);
 		if (y == NULL)
-			printf("(ni1)");
+			printf("(nil)");
 		else
 			printf("%s", y);
 		if (i != n && separator != NULL)
