@@ -5,6 +5,12 @@
 #include <stdlib.h>
 #include <string.h>
 
+/**
+ * struct listint_s - linked list
+ * @n: integer
+ * @next: pointer
+ * Description: linkedlist node structure
+ */
 typedef struct listint_s
 {
 	int n;
