@@ -9,30 +9,15 @@
 int is_palidrome(char *s)
 {
 	int len = strlen(s);
-	int start = 0;
-	int end = len - 1;
 
-	while (start < end)
+	if (len <= 1)
 	{
-		if (s[start] != s[end])
-		{
-			return (0);
-		}
-		start++;
-		end--;
+		return (1);
 	}
-	return (1);
-}
-
-int main(void);
-{
-	char str1[] = "racecar";
-	char str2[] = "hello";
-	char str3[] = "";
-	
-	printf("%d\n", is_palindrome(str1));
-	printf("%d\n", is_palindrome(str2));
-	printf("%d\n", is_palindrome(str3));
-	
-	return (0);
-}
+	if (s[0] != s[len -1])
+	{
+		return (0);
+	}
+	s[len - 1] = '\0';
+	return (is_palindrome(s + 1);
+			}
