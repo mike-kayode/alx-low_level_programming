@@ -6,7 +6,7 @@
  * main - function that add two positive number
  * @argc: first interger
  * @argv: string of arrays
- * Return: success
+ * Return: Print error follow by new line 1
  */
 
 int main(int argc, char *argv[])
