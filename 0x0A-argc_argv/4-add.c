@@ -3,9 +3,9 @@
 #include <ctype.h>
 
 /*
- * main - Function that add two positive number
+ * main - function that add two positive number
  * @argc: first interger
- * @argv: Sstring of arrays
+ * @argv: string of arrays
  * Return: success
  */
 
