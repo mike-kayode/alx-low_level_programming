@@ -5,7 +5,7 @@
  * main - program that multiplies two numbers
  * @argc: integer first
  * @argv: integer second
- * Return : 1 if two argument not given, 0 on success
+ * Return: 1 if two argument not given, 0 on success
  */
 
 int main(int argc, char *argv[])
