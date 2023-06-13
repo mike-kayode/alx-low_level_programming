@@ -10,8 +10,9 @@
 
 char *argstostr(int ac, char **av)
 {
-	int total_len = 0;
-	int current_pos = 0;
+	size_t total_len = 0;
+	size_t current_pos = 0;
+	size_t len;
 	int i;
 	char *result;
 
@@ -23,17 +24,18 @@ char *argstostr(int ac, char **av)
 	{
 		total_len += strlen(av[i]) + 1;
 	}
-	result = malloc(total_len * sizeof(char));
+	result = (char *)malloc((total_len + 1) * sizeof(char));
 	if (result == NULL)
 	{
 		return (NULL);
 	}
 	for (i = 0; i < ac; i++)
 	{
-		strcpy(result + current_pos, av[i]);
-		current_pos += strlen(av[i]);
+		len = strlen(av[i]);
+		memcpy(result + current_pos, av[i], len);
+		current_pos += len;
 		result[current_pos++] = '\n';
 	}
-	result[current_pos] = '\0';
+	result[total_len] = '\0';
 	return (result);
 }
