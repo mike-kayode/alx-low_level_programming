@@ -10,7 +10,7 @@
 
 int **alloc_grid(int width, int height)
 {
-        int i;
+	int i;
         int j;
         int **grid;
 
