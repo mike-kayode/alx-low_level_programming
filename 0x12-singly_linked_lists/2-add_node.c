@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include "lists.h"
 
 /**
@@ -7,37 +10,26 @@
  * Return: address of the element
  */
 
-int _strlen(const char *str)
-{
-	int len;
-
-	for (len = 0; str[len] != '\0'; len++)
-		;
-	return (len);
-}
-
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new_node;
+	char *new_str;
 
 	if (str == NULL)
-		return (NULL);
-	if (strdup(str) == NULL)
-		return (NULL);
+	return (NULL);
+	
+	new_node = (list_t *)malloc(sizeof(list_t));
 
-	new_node = malloc(sizeof(list_t));
 	if (new_node == NULL)
-		return (NULL);
+	return (NULL);
 
-	new_node->str = strdup(str);
-	new_node->len = _strlen(str);
+	new_str = strdup(str);
+	if (new_str == NULL)
+		free(new_node);
+	return (NULL);
 
-	if (head == NULL)
-		new_node->next = NULL;
-	else
-		new_node->next = *head;
-
+	new_node->str = new_str;
+	new_node->next = *head;
 	*head = new_node;
-
 	return (new_node);
 }
