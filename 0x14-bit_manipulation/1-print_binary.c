@@ -8,12 +8,23 @@
 
 void print_binary(unsigned long int n)
 {
-	unsigned long int i;
-	unsigned long int num_bits = sizeof(unsigned long int) * 8;
+	int num;
 
-	for (i = 1UL << (num_bits - 1); i > 0; i >>= 1)
+	if(n == 0)
 	{
-		if (n & i)
+		printf("0");
+		return;
+	}
+
+	num = sizeof(unsigned long int) * 8 - 1;
+	while ((n >> num) == 0)
+	{
+		num--;
+	}
+	while (num >= 0)
+	{
+		unsigned long int mask = 1UL << num;
+		if (n & mask)
 		{
 			printf("1");
 		}
@@ -21,6 +32,6 @@ void print_binary(unsigned long int n)
 		{
 			printf("0");
 		}
+		num--;
 	}
-	printf("\n");
 }
