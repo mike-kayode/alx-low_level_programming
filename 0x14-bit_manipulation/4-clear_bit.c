@@ -3,20 +3,20 @@
 
 /**
  * clear_bit - Sets the value of a bit
- * @n: First number
- * @m: Second number
+ * @n: Pointer
+ * @index: Index of the number
  * Return: The number of bit
  */
 
-unsigned int flip_bits(unsigned long int n, unsigned long int m)
+int clear_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned long int xor_result = n ^ m;
-	unsigned int count = 0;
+	unsigned long int mask;
 
-	while (xor_result != 0)
-	{
-		count += xor_result & 1;
-		xor_result >>= 1;
-	}
-	return (count);
+	if (index >= (sizeof(unsigned long int) * 8))
+		return (-1);
+
+	mask = 1UL << index;
+	mask = ~mask;
+	*n &= mask;
+	return (1);
 }
