@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * get_bit - function that returns the value of a bit at a given index
- * @n : integer
- * @index : integer II
- * Return : the value of bit
+ * get_bit - Function that return value
+ * @n: integer
+ * @index: integer II
+ * Return: the value of bit
  */
 
 int get_bit(unsigned long int n, unsigned int index)
@@ -17,5 +17,5 @@ int get_bit(unsigned long int n, unsigned int index)
 	}
 
 	mask = 1UL << index;
-	return (n & mask) != 0;
+	return ((n & mask) != 0);
 }
