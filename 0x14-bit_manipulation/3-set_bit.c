@@ -4,6 +4,7 @@
 /**
  * set_bit - Sets the value of a bit\
  * @n: Pointer
+ * @n: Integer
  * @index: Index of the bit
  * Return: 1 if it work
  */
