@@ -15,7 +15,6 @@ void print_binary(unsigned long int n)
 		printf("0");
 		return;
 	}
-
 	num = sizeof(unsigned long int) * 8 - 1;
 	while ((n >> num) == 0)
 	{
