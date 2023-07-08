@@ -2,9 +2,9 @@
 #include <string.h>
 
 /**
- * binary_to_uint - function that converts a binary number
- * @b : character
- * Return : the converted number
+ * binary_to_uint - Function that converts a binary number
+ * @b: Character
+ * Return: he converted number
  */
 
 unsigned int binary_to_uint(const char *b)
