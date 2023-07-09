@@ -10,7 +10,7 @@ void print_binary(unsigned long int n)
 {
 	int num;
 
-	if(n == 0)
+	if (n == 0)
 	{
 		printf("0");
 		return;
@@ -23,6 +23,7 @@ void print_binary(unsigned long int n)
 	while (num >= 0)
 	{
 		unsigned long int mask = 1UL << num;
+
 		if (n & mask)
 		{
 			printf("1");
