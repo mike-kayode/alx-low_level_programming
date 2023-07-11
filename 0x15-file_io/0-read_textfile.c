@@ -6,7 +6,7 @@
 /**
  * read_textfile - Function that reads a text file and prints it
  * @filename: Character string
- * @letter: Size of leter
+ * @letters: Size of leter
  * Return: The actual number of letters
  */
 
